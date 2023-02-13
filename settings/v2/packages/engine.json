@@ -30,7 +30,7 @@
         "_value": false
       },
       "ui": {
-        "_value": false
+        "_value": true
       },
       "particle": {
         "_value": false
@@ -121,7 +121,8 @@
       "gfx-webgl",
       "gfx-webgl2",
       "profiler",
-      "tween"
+      "tween",
+      "ui"
     ],
     "noDeprecatedFeatures": {
       "value": false,
