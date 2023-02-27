@@ -4,6 +4,7 @@
  * @LastEditors: dgflash
  * @LastEditTime: 2023-01-19 11:15:02
  */
+import { UserDataManager } from "../../../script/game/UserDataManager";
 import { LanguageManager } from "../libs/gui/language/Language";
 import { Config } from "../module/config/Config";
 import { AudioManager } from "./common/audio/AudioManager";
@@ -44,4 +45,6 @@ export class oops {
 
     /** 多语言模块 */
     static language: LanguageManager;
+
+    static userDataManager:UserDataManager;
 }

@@ -16,6 +16,7 @@ import { GameManager } from "./game/GameManager";
 import { GUI } from "./gui/GUI";
 import { LayerManager } from "./gui/layer/LayerManager";
 import { TimerManager } from "./common/timer/TimerManager";
+import { UserDataManager } from "../../../script/game/UserDataManager";
 
 const { ccclass, property } = _decorator;
 
@@ -69,6 +70,7 @@ export class Root extends Component {
         // 创建时间模块
         oops.timer = this.persistRootNode.addComponent(TimerManager)!;
 
+        oops.userDataManager = new UserDataManager();
         oops.language = new LanguageManager();
         oops.game = new GameManager(this.game);
         oops.gui = new LayerManager(this.gui);
